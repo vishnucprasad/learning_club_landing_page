@@ -558,7 +558,6 @@ img {
 
 /* theme btn */
 .tp-btn {
-  float: right;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -581,8 +580,8 @@ img {
   padding-left: 5px;
 }
 .tp-btn:hover {
-  color:var(--tp-common-black);
-  background-color:  var(--tp-common-white);
+  color: var(--tp-common-black);
+  background-color: var(--tp-common-white);
 }
 .tp-btn:focus {
   color: var(--tp-common-white);
@@ -1965,6 +1964,7 @@ ul.bili_circle li::before {
 /*  03. BANNAR CSS START
 /*----------------------------------------*/
 .banner-bg {
+  background: #000000;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3052,7 +3052,7 @@ div.choose-sub-color {
 .tp-cat-item {
   box-shadow: rgba(5, 13, 54, 0.05) 5px 15px 30px 0px;
   background-color: black;
-  
+
   /* background: var(--tp-common-white); */
   padding: 30px 30px;
   border-radius: 10px;
@@ -3063,7 +3063,6 @@ div.choose-sub-color {
   transition: all 0.3s ease-out 0s;
 }
 .tp-cat-item .tp-category-title {
- 
   color: white;
   font-size: 24px;
   line-height: 1;
@@ -3077,7 +3076,7 @@ div.choose-sub-color {
   }
 }
 .tp-cat-item:hover {
-  box-shadow: rgba(5, 13, 54, 0.010) 5px 15px 30px 0px;
+  box-shadow: rgba(5, 13, 54, 0.01) 5px 15px 30px 0px;
 }
 .tp-cat-item:hover .tp-category-title {
   color: var(--tp-heading-secondary);
@@ -6637,7 +6636,7 @@ p.checkout-coupon input[type="text"]:focus {
   white-space: nowrap;
   text-decoration: none;
 }
-.card-2{
+.card-2 {
   overflow-y: scroll;
   overflow-x: hidden;
 }
