@@ -55,7 +55,7 @@
   --tp-theme-1: #ff6652;
   --tp-theme-2: #f7f8f9;
   --tp-border-1: #fff;
-  --tp-border-2: #245d51;
+  --tp-border-2: #030303;
   /**
   @font weight declaration
   */
@@ -558,6 +558,7 @@ img {
 
 /* theme btn */
 .tp-btn {
+  float: right;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -580,8 +581,8 @@ img {
   padding-left: 5px;
 }
 .tp-btn:hover {
-  color: var(--tp-common-white);
-  background-color: var(--tp-common-black);
+  color:var(--tp-common-black);
+  background-color:  var(--tp-common-white);
 }
 .tp-btn:focus {
   color: var(--tp-common-white);
@@ -1996,7 +1997,7 @@ ul.bili_circle li::before {
 }
 
 .hero-content {
-  padding-top: 350px;
+  padding-top: 230px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
@@ -3049,7 +3050,10 @@ div.choose-sub-color {
 /*  07. CATEGORY CSS START
 /*----------------------------------------*/
 .tp-cat-item {
-  background: var(--tp-common-white);
+  box-shadow: rgba(5, 13, 54, 0.05) 5px 15px 30px 0px;
+  background-color: black;
+  
+  /* background: var(--tp-common-white); */
   padding: 30px 30px;
   border-radius: 10px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3059,6 +3063,8 @@ div.choose-sub-color {
   transition: all 0.3s ease-out 0s;
 }
 .tp-cat-item .tp-category-title {
+ 
+  color: white;
   font-size: 24px;
   line-height: 1;
   margin-bottom: 0;
@@ -3071,7 +3077,7 @@ div.choose-sub-color {
   }
 }
 .tp-cat-item:hover {
-  box-shadow: rgba(5, 13, 54, 0.05) 5px 15px 30px 0px;
+  box-shadow: rgba(5, 13, 54, 0.010) 5px 15px 30px 0px;
 }
 .tp-cat-item:hover .tp-category-title {
   color: var(--tp-heading-secondary);
@@ -6630,6 +6636,10 @@ p.checkout-coupon input[type="text"]:focus {
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
+}
+.card-2{
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .payment-method .card {
