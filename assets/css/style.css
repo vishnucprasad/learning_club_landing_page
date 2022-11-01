@@ -135,6 +135,11 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -1958,6 +1963,20 @@ ul.bili_circle li::before {
 
 .third-header.header-sticky {
   background-color: var(--tp-common-white);
+}
+
+.tp-animation-area {
+  background-image: url("../img/nihal\ placement\ post\ png.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.animated-image {
+  height: 33%;
 }
 
 /*----------------------------------------*/

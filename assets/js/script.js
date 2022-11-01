@@ -1,3 +1,4 @@
+AOS.init();
 
 window.onscroll = function () { scrollFunction() };
 
@@ -6,7 +7,7 @@ let isPopupClosed = false;
 function scrollFunction() {
     if (isPopupClosed) return;
 
-    if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+    if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
         $('#staticBackdrop').modal('show');
         $('#staticBackdrop').on('hidden.bs.modal', function (event) {
             isPopupClosed = true;
